@@ -169,5 +169,5 @@ void CSeatManager::registerCursorShape(SP<CCWpCursorShapeManagerV1> shape) {
 }
 
 bool CSeatManager::registered() {
-    return static_cast<bool>(m_pSeat);
+    return !!m_pSeat;
 }
